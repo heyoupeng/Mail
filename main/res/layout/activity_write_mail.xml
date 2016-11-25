@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_write_mail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.mail.write_mail">
+    <TextView
+        android:id="@+id/text"
+        android:text="收件人："
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:gravity="center"
+        android:layout_width="140px"
+        android:layout_height="70px" />
+
+    <EditText
+        android:background="@drawable/edittexestyle"
+        android:id="@+id/reciver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/text"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/text2"
+        android:text="发件人："
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:layout_width="140px"
+        android:layout_height="70px"
+        android:layout_below="@+id/reciver"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:background="@drawable/edittexestyle"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reciver"
+        android:layout_toEndOf="@+id/text2"
+        android:layout_marginStart="10dp"
+        android:id="@+id/sender" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/text3"
+        android:text="主   题："
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="11dp"
+        android:layout_below="@+id/text2"
+        android:layout_width="140px"
+        android:layout_height="70px" />
+    <EditText
+        android:background="@drawable/edittexestyle"
+        android:layout_marginTop="20dp"
+        android:id="@+id/subject"
+        android:layout_below="@+id/text2"
+        android:layout_toEndOf="@+id/text3"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:background="@drawable/edittexestyle"
+        android:id="@+id/mail"
+        android:layout_below="@+id/subject"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="400px" />
+
+    <Button
+        android:background="@drawable/buttonstlye"
+        android:text="发送"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:id="@+id/send_mail"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
